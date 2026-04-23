@@ -1,0 +1,18 @@
+[project]
+name = "mule-tui"
+version = "0.1.0"
+description = "Terminal-native clean-room port of the classic 4-player economic sim"
+requires-python = ">=3.10"
+dependencies = [
+    "textual>=0.80,<10",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["mule_tui"]
+
+[tool.setuptools.package-data]
+mule_tui = ["tui.tcss"]

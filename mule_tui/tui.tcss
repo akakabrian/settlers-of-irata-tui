@@ -1,0 +1,103 @@
+/* mule-tui — Textual stylesheet. Split layout: map top-left, panels on
+   the right, log below. */
+
+Screen {
+    background: rgb(10, 12, 20);
+    color: rgb(225, 230, 220);
+}
+
+Header {
+    background: rgb(30, 20, 50);
+    color: rgb(245, 235, 200);
+}
+
+Footer {
+    background: rgb(25, 18, 40);
+    color: rgb(210, 220, 210);
+}
+
+#status_bar {
+    dock: top;
+    height: 1;
+    background: rgb(35, 24, 60);
+    color: rgb(255, 240, 200);
+    padding: 0 1;
+}
+
+#body {
+    layout: horizontal;
+    height: 1fr;
+}
+
+#map_panel {
+    width: 60%;
+    border: solid rgb(90, 70, 130);
+    padding: 0 1;
+}
+
+#side {
+    width: 40%;
+    layout: vertical;
+}
+
+#scores_panel, #actions_panel, #log_panel {
+    border: solid rgb(70, 60, 100);
+    padding: 0 1;
+}
+
+#scores_panel {
+    height: 11;
+}
+
+#actions_panel {
+    height: 12;
+}
+
+#log_panel {
+    height: 1fr;
+}
+
+MapView {
+    height: 1fr;
+}
+
+RichLog {
+    height: 1fr;
+    background: rgb(8, 10, 18);
+}
+
+.bright {
+    color: rgb(255, 255, 210);
+    text-style: bold;
+}
+
+.dim {
+    color: rgb(150, 150, 180);
+}
+
+.good {
+    color: rgb(140, 220, 150);
+    text-style: bold;
+}
+
+.bad {
+    color: rgb(230, 120, 120);
+    text-style: bold;
+}
+
+ModalScreen {
+    align: center middle;
+}
+
+#modal_panel {
+    width: 60%;
+    border: solid rgb(120, 90, 180);
+    background: rgb(18, 14, 30);
+    padding: 1 2;
+}
+
+#modal_title {
+    text-style: bold;
+    color: rgb(255, 220, 160);
+    padding-bottom: 1;
+}
