@@ -338,6 +338,24 @@ async def s_auction_transfers_gold(app, pilot):
     assert p.smithore < 20
 
 
+async def s_full_12_round_game_completes(app, pilot):
+    """Final-target scenario: 12-round game runs to GAME_OVER with a
+    valid winner line and a monotonic scoreboard."""
+    safety = 0
+    while app.gs.phase is not Phase.GAME_OVER and safety < 200:
+        await pilot.press("n")
+        await pilot.pause()
+        safety += 1
+    assert app.gs.phase is Phase.GAME_OVER, (
+        f"never reached GAME_OVER: phase={app.gs.phase} round={app.gs.round}"
+    )
+    line = app.gs.winner_line()
+    assert "Winner:" in line, line
+    sb = app.gs.scoreboard()
+    scores = [s for _, s in sb]
+    assert scores == sorted(scores, reverse=True)
+
+
 async def s_log_panel_accepts_writes(app, pilot):
     from textual.widgets import RichLog
     log = app.query_one("#log", RichLog)
@@ -375,6 +393,7 @@ SCENARIOS = [
     Scenario("starvation_penalty_applied", s_starvation_penalty_applied),
     Scenario("map_render_has_segments", s_render_line_has_segments),
     Scenario("auction_transfers_gold", s_auction_transfers_gold),
+    Scenario("full_12_round_game_completes", s_full_12_round_game_completes),
     Scenario("log_panel_accepts_writes", s_log_panel_accepts_writes),
 ]
 
