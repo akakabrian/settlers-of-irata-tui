@@ -1,4 +1,4 @@
-.PHONY: all venv run clean test test-only
+.PHONY: all venv run clean test test-only playtest perf
 
 all: venv
 
@@ -15,6 +15,12 @@ test: venv
 
 test-only: venv
 	.venv/bin/python -m tests.qa $(PAT)
+
+playtest: venv
+	.venv/bin/python -m tests.playtest
+
+perf: venv
+	.venv/bin/python -m tests.perf
 
 clean:
 	rm -rf .venv __pycache__ mule_tui/__pycache__ tests/__pycache__ \
