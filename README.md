@@ -1,4 +1,7 @@
 # settlers-of-irata-tui
+
+> Inspired by M.U.L.E. (1983, Ozark Softscape / Electronic Arts). Trademarks belong to their respective owners. Unaffiliated fan project.
+
 Only the ruthless prosper.
 
 ![Hero](screenshots/hero.svg)
