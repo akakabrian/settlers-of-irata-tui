@@ -1,13 +1,13 @@
-"""mule-tui — entry point."""
+"""settlers-of-irata-tui — entry point."""
 from __future__ import annotations
 
 import argparse
 
-from mule_tui.app import MuleApp
+from settlers_of_irata_tui.app import MuleApp
 
 
 def main() -> None:
-    ap = argparse.ArgumentParser(description="mule-tui")
+    ap = argparse.ArgumentParser(description="settlers-of-irata-tui")
     ap.add_argument("--seed", type=int, default=1983)
     ap.add_argument("--race", default="mechtron",
                     choices=["mechtron", "flapper", "gollumer", "ugaaite"])

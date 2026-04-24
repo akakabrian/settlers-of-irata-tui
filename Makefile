@@ -23,5 +23,5 @@ perf: venv
 	.venv/bin/python -m tests.perf
 
 clean:
-	rm -rf .venv __pycache__ mule_tui/__pycache__ tests/__pycache__ \
-		mule_tui.egg-info tests/out/*.svg
+	rm -rf .venv __pycache__ settlers_of_irata_tui/__pycache__ tests/__pycache__ \
+		settlers_of_irata_tui.egg-info tests/out/*.svg

@@ -1,4 +1,4 @@
-"""Headless QA for mule-tui.
+"""Headless QA for settlers-of-irata-tui.
 
 Runs each scenario in a fresh MuleApp via App.run_test(), saves an SVG
 screenshot, reports pass/fail. Exit code = #failures.
@@ -16,8 +16,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Awaitable, Callable
 
-from mule_tui.app import MapView, MuleApp
-from mule_tui.engine import MAP_H, MAP_W, Phase, TileKind
+from settlers_of_irata_tui.app import MapView, MuleApp
+from settlers_of_irata_tui.engine import MAP_H, MAP_W, Phase, TileKind
 
 
 OUT = Path(__file__).resolve().parent / "out"
@@ -279,7 +279,7 @@ async def s_market_prices_positive(app, pilot):
 async def s_determinism_same_seed(app, pilot):
     # Launch two fresh engines with the same seed and compare round 1
     # development outcome when only AIs play.
-    from mule_tui.engine import GameState
+    from settlers_of_irata_tui.engine import GameState
     gs1 = GameState.new(seed=77)
     gs2 = GameState.new(seed=77)
     gs1.auto_grant_all(); gs1.advance_phase()

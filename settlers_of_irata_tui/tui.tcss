@@ -1,4 +1,4 @@
-/* mule-tui — Textual stylesheet. Split layout: map top-left, panels on
+/* settlers-of-irata-tui — Textual stylesheet. Split layout: map top-left, panels on
    the right, log below. */
 
 Screen {

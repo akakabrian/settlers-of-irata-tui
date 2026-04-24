@@ -1,4 +1,4 @@
-"""Modal screens for mule-tui — resource picker, help, game over."""
+"""Modal screens for settlers-of-irata-tui — resource picker, help, game over."""
 
 from __future__ import annotations
 
@@ -46,7 +46,7 @@ class HelpScreen(ModalScreen[None]):
 
     def compose(self) -> ComposeResult:
         with Vertical(id="modal_panel"):
-            yield Static("mule-tui — Help", id="modal_title")
+            yield Static("settlers-of-irata-tui — Help", id="modal_title")
             yield Static(
                 "Goal: highest total score (gold + property + resources "
                 "minus starvation penalty) after 12 rounds.\n\n"

@@ -1,4 +1,4 @@
-"""mule-tui — Textual app layering the clean-room engine.
+"""settlers-of-irata-tui — Textual app layering the clean-room engine.
 
 Layout:
     ┌ status bar ────────────────────────────────────────────────────┐
@@ -174,7 +174,7 @@ class MuleApp(App):
     """Main app."""
 
     CSS_PATH = "tui.tcss"
-    TITLE = "mule-tui"
+    TITLE = "settlers-of-irata-tui"
 
     BINDINGS = [
         Binding("up",    "move(0,-1)", "↑", show=False, priority=True),

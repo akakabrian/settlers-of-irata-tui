@@ -1,4 +1,4 @@
-"""mule-tui — clean-room economic sim engine.
+"""settlers-of-irata-tui — clean-room economic sim engine.
 
 GameState holds the 5x9 Irata map, 4 players (1 human + 3 AI), resources,
 and round machinery. All decisions derive from the M.U.L.E. public design

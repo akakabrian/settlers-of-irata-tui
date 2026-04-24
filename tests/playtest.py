@@ -1,4 +1,4 @@
-"""End-to-end playtest for mule-tui via Textual Pilot.
+"""End-to-end playtest for settlers-of-irata-tui via Textual Pilot.
 
 Drives a full interactive flow: boot → pick faction (set via seed) →
 land grant → buy mule → install → play a round → quit. Saves SVGs at
@@ -13,8 +13,8 @@ import asyncio
 import sys
 from pathlib import Path
 
-from mule_tui.app import MapView, MuleApp
-from mule_tui.engine import Phase
+from settlers_of_irata_tui.app import MapView, MuleApp
+from settlers_of_irata_tui.engine import Phase
 
 
 OUT = Path(__file__).resolve().parent / "out"

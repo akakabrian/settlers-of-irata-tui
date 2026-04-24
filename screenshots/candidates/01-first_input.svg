@@ -1,0 +1,50 @@
+ Round 1/12 • Phase: Production • You: $1000  food=2  energy=4  smithore=2  crystite=0
+┌──────────────────────────────────────────────────────────────────────────────────────────────┐┌──────────────────────────────────────────────────────────────┐
+│    0  1  2  3  4  5  6  7  8                                                                 ││ Scores                                                       │
+│ 0 >▲< △  .  ,  ▣  ,  .  ,  ▲                                                                 ││ You        (YOU) $1000  prop=$500   = 1750                   │
+│ 1  △  .  ,  .  ◉  .  ,  .  ,                                                                 ││   f=2 e=4 s=2 c=0 (need food 2)                              │
+│ 2  ~  ≈  ~  ≈  ▣  ≈  ~  ≈ [F]                                                                ││ AI-Bal     $510   prop=$650   = 1555                         │
+│ 3  ,  .  △  .  ◉  .  ,  .  △                                                                 ││   f=1 e=3 s=7 c=0 (need food 3)                              │
+│ 4  ▲  △  .  ,  ▣ [F] .  △ [S]                                                                ││ AI-Gre     $420   prop=$750   = 1440                         │
+│                                                                                              ││   f=4 e=3 s=2 c=0 (need food 3)                              │
+│                                                                                              ││ AI-Def     $620   prop=$550   = 1390                         │
+│                                                                                              ││   f=2 e=3 s=2 c=0 (need food 4)                              │
+│                                                                                              │└──────────────────────────────────────────────────────────────┘
+│                                                                                              │┌──────────────────────────────────────────────────────────────┐
+│                                                                                              ││ Phase: Production                                            │
+│                                                                                              ││ Resolving phase...                                           │
+│                                                                                              ││ n  continue to next phase                                    │
+│                                                                                              ││ Last event: -                                                │
+│                                                                                              ││                                                              │
+│                                                                                              ││                                                              │
+│                                                                                              ││                                                              │
+│                                                                                              ││                                                              │
+│                                                                                              ││                                                              │
+│                                                                                              ││                                                              │
+│                                                                                              │└──────────────────────────────────────────────────────────────┘
+│                                                                                              │┌──────────────────────────────────────────────────────────────┐
+│                                                                                              ││ Welcome to Irata — Mechtron colony founded.                  │
+│                                                                                              ││ Phase: Land Grant (round 1).                                 │
+│                                                                                              ││ You received (6,2) .                                         │
+│                                                                                              ││ AI-Bal received (8,4) .                                      │
+│                                                                                              ││ AI-Gre received (8,2) .                                      │
+│                                                                                              ││ AI-Def received (5,4) .                                      │
+│                                                                                              ││ -- Round 1: Development phase --                             │
+│                                                                                              ││ AI-Bal bought a mule, outfitted for smithore, placed at (8   │
+│                                                                                              ││ AI-Gre bought a mule, outfitted for food, placed at (8,2).   │
+│                                                                                              ││ AI-Def bought a mule, outfitted for food, placed at (5,4).   │
+│                                                                                              ││ -- Production --                                             │
+│                                                                                              ││   AI-Gre +3 food at (8,2).                                   │
+│                                                                                              ││   AI-Def +2 food at (5,4).                                   │
+│                                                                                              ││   AI-Bal +5 smithore at (8,4).                               │
+│                                                                                              ││                                                              │
+│                                                                                              ││                                                              │
+│                                                                                              ││                                                              │
+│                                                                                              ││                                                              │
+│                                                                                              ││                                                              │
+│                                                                                              ││                                                              │
+│                                                                                              ││                                                              │
+│                                                                                              ││                                                              │
+│                                                                                              ││                                              ▌               │
+└──────────────────────────────────────────────────────────────────────────────────────────────┘└──────────────────────────────────────────────────────────────┘
+ g Grant  b Buy  n Next  p Pause  s Scores  h Help  q Quit                                                                                          ▏^p palette

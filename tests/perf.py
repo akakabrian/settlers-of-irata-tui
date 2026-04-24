@@ -1,4 +1,4 @@
-"""Perf smoke for mule-tui. Checks two hot paths:
+"""Perf smoke for settlers-of-irata-tui. Checks two hot paths:
 
   1. Engine: a 12-round deterministic game from GameState.new to GAME_OVER
      using `n`-equivalent phase advances (AI-only, no UI).
@@ -16,8 +16,8 @@ import asyncio
 import sys
 import time
 
-from mule_tui.app import MapView, MuleApp
-from mule_tui.engine import GameState, Phase
+from settlers_of_irata_tui.app import MapView, MuleApp
+from settlers_of_irata_tui.engine import GameState, Phase
 
 
 ENGINE_BUDGET_MS = 500        # 12 rounds, all AI, synchronous

@@ -1,4 +1,4 @@
-# mule-tui — design decisions
+# settlers-of-irata-tui — design decisions
 
 ## 2026-04-23 — Binding strategy
 
